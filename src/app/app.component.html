@@ -1,0 +1,12 @@
+<div class="editor">
+
+  <ejs-documenteditorcontainer #documentEditor [enableToolbar]="true" [serviceUrl]="serviceUrl" height="100vh"
+    style="display:block" enableSpellCheck="true" enableTrackChanges="true" [currentUser]="userName"
+    enableComment="true" enablePrint="true" commentDelete="false" showPropertiesPane="top"
+    (documentChange)="onDocumentChange()" (contentChange)="onContentChange()">
+  </ejs-documenteditorcontainer>
+  <button (click)="loadDocumentsfdt()">Load Document Sfdt</button>
+  <button (click)="loadDocument()">Load Document</button>
+
+  <button (click)="saveDocumentAsSFDT()">Save Document</button>
+</div>
